@@ -48,8 +48,7 @@ t1$t7 = gsub(6,"LAYING",t6)
 names(t1)[7]<-"DesciptiveActivity"
 
 t1<-t1[-c(2:6)]
-#View(t1)
-#t1$DesciptiveActivity
+
 ###
 
 #####################$$$$$$##################
@@ -65,11 +64,9 @@ alldata<-cbind(X_data,t1,Subject_data)
 #second to last column is descriptive activity, 
 #third to last column is original activity.
 
-#summary(alldata$Subject)
-#summary(alldata$DesciptiveActivity)
+
 alldata$DesciptiveActivity<-as.factor(alldata$DesciptiveActivity)
-#alldata$DesciptiveActivity[4]
-#summary(alldata$DesciptiveActivity)
+
 ###
 
 
@@ -95,7 +92,6 @@ means<-c(means, sum(x)/length(x))
 
 
 a1<-subset(alldata[1:(n-3)],alldata$Activity==1)
-
 
 means=c()
 for(i in 1:length(a1)){
