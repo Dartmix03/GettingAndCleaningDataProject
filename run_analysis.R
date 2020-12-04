@@ -20,7 +20,7 @@ features <- read.table("features.txt", quote="\"", comment.char="")
 # First step to 1. Merge the training and the test sets to create one data set.  Merge the Xs and Subjects
 ####
 
-names(subject_train)<-"Subject"
+
 
 X_data<-rbind(X_test,X_train)
 names(X_data)<-features$V2
