@@ -1,14 +1,14 @@
 
 ### 
-#All data Saved
+#All data Saved... DATA SHOULD BE SAVED IN WORKING DIRECTORY
 
-X_test <- read.table("test/X_test.txt", quote="\"", comment.char="")
-y_test <- read.table("test/y_test.txt", quote="\"", comment.char="")
-subject_test <- read.table("~/Desktop/WorkingDirectory/test/subject_test.txt", quote="\"", comment.char="")
+X_test <- read.table("X_test.txt", quote="\"", comment.char="")
+y_test <- read.table("y_test.txt", quote="\"", comment.char="")
+subject_test <- read.table("subject_test.txt", quote="\"", comment.char="")
 
-X_train <- read.table("~/Desktop/WorkingDirectory/train/X_train.txt", quote="\"", comment.char="")
-y_train <- read.table("~/Desktop/WorkingDirectory/train/y_train.txt", quote="\"", comment.char="")
-subject_train <- read.table("~/Desktop/WorkingDirectory/train/subject_train.txt", quote="\"", comment.char="")
+X_train <- read.table("X_train.txt", quote="\"", comment.char="")
+y_train <- read.table("y_train.txt", quote="\"", comment.char="")
+subject_train <- read.table("subject_train.txt", quote="\"", comment.char="")
 
 features <- read.table("features.txt", quote="\"", comment.char="")
 ###
